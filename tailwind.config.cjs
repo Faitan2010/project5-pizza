@@ -73,7 +73,8 @@ module.exports = {
             },
             colors: {
                 orange: '#FF8C42',
-                black:'#151515'
+                black:'#151515',
+                pink: '#FFDDC8'
             },
             screens: {
                 'max-2xl': {'max': '1440px'},
