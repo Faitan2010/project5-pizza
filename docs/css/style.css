@@ -474,30 +474,33 @@ video {
 .relative {
   position: relative;
 }
-.right-15 {
-  right: 3.75rem;
+.-bottom-20 {
+  bottom: -5rem;
 }
-.bottom-0 {
-  bottom: 0px;
+.-left-\[50\%\] {
+  left: -50%;
 }
 .right-0 {
   right: 0px;
-}
-.-bottom-20 {
-  bottom: -5rem;
 }
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
+.-ml-5 {
+  margin-left: -1.25rem;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mb-18 {
   margin-bottom: 4.5rem;
 }
+.mb-\[168px\] {
+  margin-bottom: 168px;
+}
 .mt-10 {
   margin-top: 2.5rem;
-}
-.mb-20 {
-  margin-bottom: 5rem;
 }
 .block {
   display: block;
@@ -508,17 +511,32 @@ video {
 .w-\[192px\] {
   width: 192px;
 }
-.w-\[284px\] {
-  width: 284px;
-}
-.w-\[218px\] {
-  width: 218px;
-}
 .w-\[198px\] {
   width: 198px;
 }
+.w-\[284px\] {
+  width: 284px;
+}
+.w-\[442px\] {
+  width: 442px;
+}
+.w-\[682px\] {
+  width: 682px;
+}
+.w-\[248px\] {
+  width: 248px;
+}
+.w-\[247px\] {
+  width: 247px;
+}
+.max-w-\[1379px\] {
+  max-width: 1379px;
+}
 .max-w-\[1720px\] {
   max-width: 1720px;
+}
+.max-w-\[1920px\] {
+  max-width: 1920px;
 }
 .max-w-\[380px\] {
   max-width: 380px;
@@ -526,14 +544,24 @@ video {
 .max-w-\[580px\] {
   max-width: 580px;
 }
+.max-w-\[600px\] {
+  max-width: 600px;
+}
+.max-w-\[346px\] {
+  max-width: 346px;
+}
+.max-w-\[391px\] {
+  max-width: 391px;
+}
+.translate-x-\[50\%\] {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .cursor-pointer {
   cursor: pointer;
-}
-.flex-col {
-  flex-direction: column;
 }
 .items-center {
   align-items: center;
@@ -544,11 +572,17 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.justify-around {
+  justify-content: space-around;
+}
 .gap-10 {
   gap: 2.5rem;
 }
 .gap-2 {
   gap: 0.5rem;
+}
+.gap-25 {
+  gap: 6.25rem;
 }
 .gap-3 {
   gap: 0.75rem;
@@ -556,8 +590,11 @@ video {
 .gap-9 {
   gap: 2.25rem;
 }
-.self-center {
-  align-self: center;
+.gap-19 {
+  gap: 4.75rem;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -587,26 +624,52 @@ video {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.py-13 {
-  padding-top: 3.25rem;
-  padding-bottom: 3.25rem;
+.py-18 {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.py-18 {
-  padding-top: 4.5rem;
+.pb-12 {
+  padding-bottom: 3rem;
+}
+.pb-16 {
+  padding-bottom: 4rem;
+}
+.pb-18 {
   padding-bottom: 4.5rem;
 }
-.pb-13 {
-  padding-bottom: 3.25rem;
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+.pb-7 {
+  padding-bottom: 1.75rem;
+}
+.pb-7\.5 {
+  padding-bottom: 1.875rem;
 }
 .pt-\[152px\] {
   padding-top: 152px;
 }
-.pb-18 {
-  padding-bottom: 4.5rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
+.text-center {
+  text-align: center;
+}
+.font-Kaushan {
+  font-family: Kaushan Script, Roboto, Helvetica, Arial, sans-serif;
+}
+.font-Kosugi {
+  font-family: Kosugi, Roboto, Helvetica, Arial, sans-serif;
 }
 .font-Quicksand {
   font-family: Quicksand, Roboto, Helvetica, Arial, sans-serif;
@@ -615,15 +678,33 @@ video {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
 }
+.text-\[152px\] {
+  font-size: 152px;
+}
 .text-\[32px\] {
   font-size: 32px;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.font-normal {
+  font-weight: 400;
 }
 .font-semibold {
   font-weight: 600;
@@ -638,6 +719,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-\[\#FFDDC8\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 221 200 / var(--tw-text-opacity));
 }
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
