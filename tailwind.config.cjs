@@ -77,13 +77,15 @@ module.exports = {
                 pink: '#FFDDC8'
             },
             screens: {
-                'max-2xl': {'max': '1440px'},
+
+                'max-2xl': '1520px',
                 '2xl': '1442px',
                 'xl': '1234px',
-                'costil':'1100px'
+                'costil':'1100px',
+                'img': '1728px'
             },
             gridTemplateColumns: {
-                'country-table-flag' : '37% minmax(0, 1fr)',
+                'country-table-flag' : 'auto minmax(30px, auto) min-content;',
                 'country-table-text': '32px minmax(0, 1fr)',
                 'country-table-image': '24px minmax(0, 1fr)',
                 'country-table-tablet': '30% minmax(0, 1fr)',

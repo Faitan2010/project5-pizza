@@ -19,7 +19,7 @@
 // }
 .rotate-line {
     border: 21px solid #FF8C42;
-    transform: rotate(116.21deg);
+    transform: rotate(119.21deg);
 }
 // .ul-list {
 //     transform: rotate(26deg);
@@ -36,10 +36,9 @@
     border-radius: 10px;
 }
 .form-input {
-    background: rgba(255, 255, 255, 0.05);
+    background: transparent;
     border-bottom: 2px;
     border-style: dotted;
     border-color: white;
-    backdrop-filter: blur(1px);
     outline: none;
 }
