@@ -27,3 +27,19 @@
 // .ul-text {
 //     transform: rotate(26deg);
 // }
+.forms {
+    background: rgba(255, 255, 255, 0.05);
+    border-width: 3px 1px 1px 3px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+    border-radius: 10px;
+}
+.form-input {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 2px;
+    border-style: dotted;
+    border-color: white;
+    backdrop-filter: blur(1px);
+    outline: none;
+}
