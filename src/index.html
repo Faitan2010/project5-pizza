@@ -12,8 +12,8 @@
     <title>Document</title>
 </head>
 <body class="font-Quicksand bg-black text-orange relative z-40">
-    <header class="max-w-[1720px] mx-auto mt-10 mb-18 px-5 ">
-        <div class="flex justify-between">
+    <header class="max-w-[1720px] mx-auto md:mt-10 md:mb-18 mb-8 mt-5 px-5 hidden">
+        <div class="flex justify-between items-center">
             <div>
                 <a href="#">
                     <svg width="227" height="59" viewBox="0 0 227 59" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +22,7 @@
                         </svg>
                 </a>
             </div>
-            <div class="text-orange font-Quicksand font-bold max-2xl:text-[32px] xl:text-3xl text-xl flex justify-between gap-9">
+            <div class="text-orange font-Quicksand font-bold max-2xl:text-[32px] xl:text-3xl text-xl md:flex justify-between lg:gap-9 gap-5 hidden">
                 <div>
                     <a href="#" class="block">Home</a>
                 </div>
@@ -36,23 +36,26 @@
                     <a href="#" class="block">Contact Us</a>
                 </div>
             </div>
+            <div class="menu-icon md:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-orange before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute after:bg-orange after:left-0 after:bottom-0 after:content-[''] after:w-full ">
+                <span class="menu-icon-line w-full h-0.5 bg-orange absolute left-0 top-[50%] translate-y-[-50%] active:none"></span>
+            </div>
         </div>
     </header>
     <main>
-        <section class="relative max-w-[1720px] mx-auto mb-[168px] px-5 ">
+        <section class="relative max-w-[1720px] mx-auto mb-[168px] px-5 hidden">
             <div class="flex gap-10 justify-between max-w-[1720px] mx-auto costil:flex-row flex-col">
-                <div class="costil:pt-[152px] pt-20 font-semibold mx-auto">
+                <div class="costil:pt-[152px] md:pt-20 pt-8 font-semibold mx-auto">
                     <h2 class="max-2xl:text-9xl xl:text-6xl text-4xl max-w-[580px] text-center costil:text-left">
                         Pizza family
                     </h2>
-                    <p class="max-2xl:text-4xl xl:text-3xl text-xl py-18 max-w-[380px] capitalize text-center costil:text-left costil:mx-[unset] mx-auto">
+                    <p class="max-2xl:text-4xl xl:text-3xl text-xl md:py-18 py-7 max-w-[380px] capitalize text-center costil:text-left costil:mx-[unset] mx-auto">
                         people disappoint, but pizza never does.
                     </p>
-                    <form action="#" class="flex gap-2 pb-18">
+                    <form action="#" class="flex sm:gap-2 gap-6 md:pb-18 pb-7 sm:flex-row flex-col sm:align-[unset] mx-auto items-center">
                         <label for="#">
-                            <input type="text" class="bg-black text-white border-4 rounded-md py-2 px-2 w-[284px]">
+                            <input type="text" class="bg-black text-white border-4 border-orange rounded-md py-2 px-2 w-[284px] sm:mx-[unset] mx-auto">
                         </label>
-                        <button class="py-2 px-2 text-white bg-orange flex gap-3 items-center rounded cursor-pointer w-[198px] justify-center">
+                        <button class="py-2 px-2 text-white bg-orange flex gap-3 items-center rounded cursor-pointer w-[198px]  ">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0.258375 15.4332L3.95853 11.9575C4.12552 11.8006 4.35189 11.7134 4.58939 11.7134H5.19427C4.17006 10.4827 3.56146 8.93509 3.56146 7.25113C3.56146 3.24554 7.0167 0 11.2805 0C15.5444 0 19 3.24554 19 7.25113C19 11.2567 15.5448 14.5023 11.2805 14.5023C9.48817 14.5023 7.84015 13.9305 6.5302 12.9682V13.5365C6.5302 13.7597 6.43743 13.9723 6.27044 14.1292L2.57028 17.6049C2.22145 17.9326 1.65739 17.9326 1.31227 17.6049L0.262087 16.6182C-0.0867405 16.2905 -0.0867405 15.7609 0.258375 15.4332ZM11.2805 12.2709C14.2322 12.2709 16.6243 10.0277 16.6243 7.25113C16.6243 4.47835 14.2363 2.23133 11.2805 2.23133C8.32888 2.23133 5.93682 4.47452 5.93682 7.25113C5.93682 10.0239 8.3248 12.2709 11.2805 12.2709ZM11.2798 3.90483C12.7931 3.90483 14.0199 5.05711 14.0199 6.47888C14.0199 7.62802 12.2291 9.72303 11.5429 10.4834C11.5107 10.5196 11.4705 10.5487 11.425 10.5687C11.3796 10.5886 11.33 10.599 11.2798 10.599C11.2296 10.599 11.18 10.5886 11.1346 10.5687C11.0891 10.5487 11.0489 10.5196 11.0167 10.4834C10.3306 9.72303 8.53966 7.62837 8.53966 6.47888C8.53966 5.05711 9.76649 3.90483 11.2798 3.90483ZM11.2798 7.25183C11.7719 7.25183 12.1704 6.87704 12.1704 6.41508C12.1704 5.95278 11.7715 5.57833 11.2798 5.57833C10.7881 5.57833 10.3892 5.95278 10.3892 6.41508C10.3892 6.87704 10.7881 7.25183 11.2798 7.25183Z" fill="white"/>
                                 </svg>
@@ -76,163 +79,162 @@
                     </svg>
             </div>
         </section>
-        <section class="font-Kosugi text-[#FFDDC8] px-5 pb-20 relative mx-auto max-w-[1920px] z-30 bg-black ">
-            <div class="flex gap-2">
-                <div class="max-w-[442px] w-full -ml-5">
-                    <div class="absolute -left-[50%] translate-x-[50%] z-50 top-[140px]">
-                        <img src="./img/102191.png" alt="#" class="">
-                    </div>
-                </div>
-                <div>
-                    <h2 class="font-Kaushan text-[152px] capitalize text-orange mx-auto max-w-[391px] pl-22.5">
-                        menu
-                    </h2>
-                    <div class="flex gap-25 max-w-[1379px] font-normal">
-                        <div class="max-w-[682px]">
-                            <div class="pb-12">
-                                <h3 class="text-5xl pb-7.5 text-center capitalize">
-                                    Pizza by the slice
-                                </h3>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+        <section class="font-Kosugi text-[#FFDDC8] px-5 costil:pb-20 pb-[330px] costil:mb-[unset] mb-10 relative mx-auto max-w-[1920px] z-30 bg-black ">
+            <div class="">
+                    
+                    <div class=" font-normal ml-auto pizza:max-w-[77%] xl:max-w-[90%] max-w-full w-full">
+                        <div class="absolute pizza:-left-[50%] xl:-left-[40%] costil:left-0 left-1/2  xl:translate-x-[50%] costil:translate-x-0 -translate-x-[50%] z-50 pizza:top-[140px] xl:top-[300px] top-[unset] xl:bottom-[unset] bottom-0 pizza:w-[unset] xl:w-1/2 costil:w-full w-[300px]">
+                            <img src="./img/102191.png" alt="#" class="pizza:max-w-[100%] xl:max-w-[50%] max-w-full xl:w-[unset] w-[300px]">
+                        </div>
+                        <h2 class="font-Kaushan lg:text-[152px] text-9xl pb-5 capitalize text-orange text-center">
+                            menu
+                        </h2>
+                        <div class="flex gap-5 justify-between costil:flex-row flex-col">
+                            <div class="max-2xl:max-w-[682px] costil:max-w-[500px] max-w-[600px] costil:mx-[unset] mx-auto">
+                                <div class="pb-12">
+                                    <h3 class="lg:text-5xl text-3xl pb-7.5 text-center capitalize">
+                                        Pizza by the slice
+                                    </h3>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
+                                    </div>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+                                <div class="pb-12 capitalize">
+                                    <h3 class="lg:text-5xl text-3xl pb-7.5 text-center">
+                                        Pizza by the slice
+                                    </h3>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
-                                </div>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
+                                    <div class="grid grid-cols-country-table-flag pb-3 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                            Pizza style
+                                        </p>
+                                        <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
+                                            <span>................................................................................................................................</span>
+                                        </div>
+                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                            $4.2
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="pb-12 capitalize">
-                                <h3 class="text-5xl pb-7.5 text-center">
-                                    Pizza by the slice
+                            <div class="max-w-[600px] costil:mx-[unset] mx-auto">
+                                <h3 class="lg:text-5xl text-3xl md:pb-16 pb-8 text-center capitalize">
+                                    Gourmet Pizza
                                 </h3>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+                                <div class="flex justify-between mb-10 sm:gap-19 gap-8">
+                                    <div class="max-w-[346px] ">
+                                        <p class="lg:text-[32px] text-2xl pb-5 capitalize">
+                                            Classic pizza
+                                        </p>
+                                        <p class="text-xl">
+                                            Pizza comes with all tapping that you describe in this section
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
+                                    <div class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        $19.99
+                                    </div>
                                 </div>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+                                <div class="flex justify-between mb-10 sm:gap-19 gap-8">
+                                    <div class="max-w-[346px]">
+                                        <p class="lg:text-[32px] text-2xl pb-5 capitalize">
+                                            Classic pizza
+                                        </p>
+                                        <p class="text-xl">
+                                            Pizza comes with all tapping that you describe in this section
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
+                                    <div class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        $19.99
+                                    </div>
                                 </div>
-                                <div class="grid grid-cols-country-table-flag pb-3 gap-10 items-end">
-                                    <p class="text-[32px] capitalize">
-                                        Pizza style
-                                    </p>
-                                    <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
-                                        <span>................................................................................................................................</span>
+                                <div class="flex justify-between mb-10 sm:gap-19 gap-8">
+                                    <div class="max-w-[346px]">
+                                        <p class="lg:text-[32px] text-2xl pb-5 capitalize">
+                                            Classic pizza
+                                        </p>
+                                        <p class="text-xl">
+                                            Pizza comes with all tapping that you describe in this section
+                                        </p>
                                     </div>
-                                    <p class="text-[32px] whitespace-nowrap">
-                                        $4.2
-                                    </p>
+                                    <div class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        $19.99
+                                    </div>
+                                </div>
+                                <div class="flex justify-between mb-10 sm:gap-19 gap-8">
+                                    <div class="max-w-[346px]">
+                                        <p class="lg:text-[32px] text-2xl pb-5 capitalize">
+                                            Classic pizza
+                                        </p>
+                                        <p class="text-xl">
+                                            Pizza comes with all tapping that you describe in this section
+                                        </p>
+                                    </div>
+                                    <div class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        $19.99
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button class="py-4 px-2 text-[#FFDDC8] bg-orange rounded cursor-pointer w-[247px] text-2xl capitalize">
+                                        Explore more
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <div class="max-w-[600px]">
-                            <h3 class="text-5xl pb-16 text-center capitalize">
-                                Gourmet Pizza
-                            </h3>
-                            <div class="flex justify-between mb-10 gap-19">
-                                <div class="max-w-[346px] ">
-                                    <p class="text-[32px] pb-5 capitalize">
-                                        Classic pizza
-                                    </p>
-                                    <p class="text-xl">
-                                        Pizza comes with all tapping that you describe in this section
-                                    </p>
-                                </div>
-                                <div class="text-[32px]">
-                                    $ 19.99
-                                </div>
-                            </div>
-                            <div class="flex justify-between mb-10 gap-19">
-                                <div class="max-w-[346px]">
-                                    <p class="text-[32px] pb-5 capitalize">
-                                        Classic pizza
-                                    </p>
-                                    <p class="text-xl">
-                                        Pizza comes with all tapping that you describe in this section
-                                    </p>
-                                </div>
-                                <div class="text-[32px]">
-                                    $ 19.99
-                                </div>
-                            </div>
-                            <div class="flex justify-between mb-10 gap-19">
-                                <div class="max-w-[346px]">
-                                    <p class="text-[32px] pb-5 capitalize">
-                                        Classic pizza
-                                    </p>
-                                    <p class="text-xl">
-                                        Pizza comes with all tapping that you describe in this section
-                                    </p>
-                                </div>
-                                <div class="text-[32px]">
-                                    $ 19.99
-                                </div>
-                            </div>
-                            <div class="flex justify-between mb-10 gap-19">
-                                <div class="max-w-[346px]">
-                                    <p class="text-[32px] pb-5 capitalize">
-                                        Classic pizza
-                                    </p>
-                                    <p class="text-xl">
-                                        Pizza comes with all tapping that you describe in this section
-                                    </p>
-                                </div>
-                                <div class="text-[32px]">
-                                    $ 19.99
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button class="py-4 px-2 text-[#FFDDC8] bg-orange rounded cursor-pointer w-[247px] text-2xl capitalize">
-                                    Explore more
-                                </button>
-                            </div>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
-        <section class="font-Quicksand relative z-0 max-w-[1920px] mx-auto ">
+        <section class="font-Quicksand relative z-0 max-w-[1920px] mx-auto hidden">
             <div class="rotate-line absolute bottom-[50%] -right-[130px] w-[1890px] z-10 h-0 bg-orange">
         
             </div>
@@ -278,11 +280,11 @@
                 </div>
             </div>
         </section>
-        <section class="bg-black relative z-40 md:mt-36 mt-18 md:pb-36 pb-18 max-w-[1920px] mx-auto font-Quicksand overflow-hidden md:px-0 px-5">
+        <section class="hidden bg-black relative z-40 md:mt-36 mt-18 md:pb-36 pb-18 max-w-[1920px] mx-auto font-Quicksand overflow-hidden md:px-0 px-5">
             <div class="md:text-right text-[#DDDDDD] pt-5 pb-8 md:text-[21px] text-lg md:mr-[142px] mr-auto ml-auto md:ml-[unset] text-center capitalize">
                 *terms & conditions applied .
             </div>
-            <form action="#" class="md:pb-0 pb-9.5 md:w-[626px] w-auto max-w-[626] md:max-w-[unset] ml-auto text-white forms md:h-[930px] h-auto mb-19 2xl:mr-[142px] relative z-50 xl:mr-15 mr-auto md:px-0 px-5">
+            <form action="#" class="md:pb-0 pb-9.5 md:w-[626px] w-auto max-w-[626] md:max-w-[unset] ml-auto text-white forms md:h-[930px] h-auto mb-19 2xl:mr-[142px] relative z-50 xl:mr-15 mr-auto md:px-0 sm:px-5 px-2">
                 <p class="lg:text-[40px] text-2xl font-bold pt-9.5 pb-2 text-center uppercase text-[#DDDDDD]">
                     Reservation
                 </p>

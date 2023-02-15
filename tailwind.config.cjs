@@ -82,7 +82,8 @@ module.exports = {
                 '2xl': '1442px',
                 'xl': '1234px',
                 'costil':'1100px',
-                'img': '1728px'
+                'img': '1728px',
+                'pizza': '1800px'
             },
             gridTemplateColumns: {
                 'country-table-flag' : 'auto minmax(30px, auto) min-content;',
