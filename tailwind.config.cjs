@@ -5,6 +5,7 @@ module.exports = {
         './src/**/*.scss',
         './src/**/*.js',
     ],
+    darkMode: 'class',
     theme: {
         extend: {
             spacing: {
@@ -74,7 +75,10 @@ module.exports = {
             colors: {
                 orange: '#FF8C42',
                 black:'#151515',
-                pink: '#FFDDC8'
+                pink: '#FFDDC8',
+                grey: '#F4F4F4',
+                'light_orange':'#FF5B00',
+                brown: '#7B3000'
             },
             screens: {
 
@@ -83,7 +87,8 @@ module.exports = {
                 'xl': '1234px',
                 'costil':'1100px',
                 'img': '1728px',
-                'pizza': '1800px'
+                'pizza': '1800px',
+            
             },
             gridTemplateColumns: {
                 'country-table-flag' : 'auto minmax(30px, auto) min-content;',
