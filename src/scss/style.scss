@@ -79,8 +79,7 @@ button:hover {
         flex-direction: column;
         gap: 73px;
         width: 100%;
-        height: calc(100vh - 103px);
-        background-color: white;
+        height: 100vh;
         z-index: 98876;
         top: 100%;
         left: 0;
@@ -90,9 +89,13 @@ button:hover {
 		text-align: center;
 	}
 	.header-on-mobile.active {
-		height: calc(100vh - 73px);
+		height: 100vh;
 	}
 	.menu-header.active .header-on-mobile {
 		transform: translateX(0);
 	}
+}
+
+a:hover {
+    text-decoration: underline;
 }

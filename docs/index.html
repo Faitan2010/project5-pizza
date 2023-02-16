@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <title>Document</title>
 </head>
-<body class="font-Quicksand bg-black dark:bg-grey text-orange dark:text-light_orange relative z-40">
-    <header class="max-w-[1720px] mx-auto md:mt-10 md:mb-18 mb-8 mt-5 px-5">
-        <div class="flex justify-between items-center">
+<body class="font-Quicksand bg-black dark:bg-grey text-orange dark:text-light_orange relative z-40 ">
+    <header class="max-w-[1720px] mx-auto md:mt-10 md:mb-18 mb-8 mt-5 px-5 relative">
+        <div class="flex justify-between items-center menu-header pb-5">
             <div>
                 <a href="#">
                     <svg width="227" height="59" viewBox="0 0 227 59" fill="none" xmlns="http://www.w3.org/2000/svg" class="block dark:hidden">
@@ -26,7 +26,7 @@
                         </svg>
                 </a>
             </div>
-            <div class="text-orange dark:text-light_orange font-Quicksand font-bold max-2xl:text-[32px] xl:text-3xl text-xl md:flex justify-between lg:gap-9 gap-5 hidden">
+            <div class="header-on-mobile bg-black dark:bg-white text-orange dark:text-light_orange font-Quicksand font-bold max-2xl:text-[32px] xl:text-3xl text-xl flex md:flex-row flex-col justify-between lg:gap-9 md:gap-5 gap-15 md:static fixed">
                 <div>
                     <a href="#" class="block">Home</a>
                 </div>
@@ -40,8 +40,8 @@
                     <a href="#" class="block">Contact Us</a>
                 </div>
             </div>
-            <div class="menu-icon md:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-orange before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute after:bg-orange after:left-0 after:bottom-0 after:content-[''] after:w-full ">
-                <span class="menu-icon-line w-full h-0.5 bg-orange absolute left-0 top-[50%] translate-y-[-50%] active:none"></span>
+            <div class="menu-icon md:hidden block w-8 h-5 relative right-0 top-0 before:w-full before:h-0.5 before:absolute before:bg-orange dark:before:bg-light_orange before:left-0 before:top-0 before:content-[''] cursor-pointer after::w-full after:h-0.5 after:absolute dark:after:bg-light_orange after:bg-orange after:left-0 after:bottom-0 after:content-[''] after:w-full ">
+                <span class="menu-icon-line w-full h-0.5 bg-orange dark:bg-light_orange absolute left-0 top-[50%] translate-y-[-50%] active:none"></span>
             </div>
         </div>
     </header>
