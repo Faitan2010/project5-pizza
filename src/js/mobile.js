@@ -40,6 +40,7 @@ export const MobileMenu = function () {
 
         this.menu.addEventListener('click', (e) => {
             this.header.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden')
         })
     }
 

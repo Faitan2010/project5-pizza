@@ -7,11 +7,8 @@ export const Switcher = function () {
 
 Switcher.prototype.toggleMods = function () {
     this.blackSwitcher = document.querySelector('#black-switcher');
-    console.log(this.blackSwitcher);
     this.whiteSwitcher = document.querySelector('#white-switcher');
-    console.log(this.whiteSwitcher);
     this.html = document.querySelector('.html');
-    console.log(this.html);
     const _this = this;
     
         if (_this.blackSwitcher) {

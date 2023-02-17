@@ -99,3 +99,6 @@ button:hover {
 a:hover {
     text-decoration: underline;
 }
+* {
+    transition: all ease .1s;
+}
