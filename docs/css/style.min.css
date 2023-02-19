@@ -480,8 +480,8 @@ video {
 .-bottom-20 {
   bottom: -5rem;
 }
-.-right-\[130px\] {
-  right: -130px;
+.-right-\[165px\] {
+  right: -165px;
 }
 .bottom-0 {
   bottom: 0px;
@@ -515,12 +515,6 @@ video {
 }
 .top-\[unset\] {
   top: unset;
-}
-.left-10 {
-  left: 2.5rem;
-}
-.-right-\[165px\] {
-  right: -165px;
 }
 .z-0 {
   z-index: 0;
@@ -573,9 +567,6 @@ video {
 }
 .mr-auto {
   margin-right: auto;
-}
-.mt-5 {
-  margin-top: 1.25rem;
 }
 .mt-19 {
   margin-top: 4.75rem;
@@ -735,6 +726,9 @@ video {
 .grid-cols-country-table-flag {
   grid-template-columns: auto minmax(30px, auto) min-content;;
 }
+.grid-cols-country-table-text {
+  grid-template-columns: 50% minmax(0, 1fr);
+}
 .flex-col {
   flex-direction: column;
 }
@@ -884,6 +878,12 @@ video {
 .pb-\[330px\] {
   padding-bottom: 330px;
 }
+.pl-7 {
+  padding-left: 1.75rem;
+}
+.pl-7\.5 {
+  padding-left: 1.875rem;
+}
 .pl-\[1\.875rem\] {
   padding-left: 1.875rem;
 }
@@ -892,6 +892,9 @@ video {
 }
 .pt-10 {
   padding-top: 2.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -904,9 +907,6 @@ video {
 }
 .pt-9\.5 {
   padding-top: 2.375rem;
-}
-.pt-20 {
-  padding-top: 5rem;
 }
 .text-center {
   text-align: center;
@@ -1335,6 +1335,10 @@ a:hover {
     margin-bottom: 2.5rem;
   }
 
+  .sm\:grid-cols-country-table-flag {
+    grid-template-columns: auto minmax(30px, auto) min-content;;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1355,6 +1359,10 @@ a:hover {
     gap: 0.5rem;
   }
 
+  .sm\:whitespace-normal {
+    white-space: normal;
+  }
+
   .sm\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -1362,6 +1370,11 @@ a:hover {
 
   .sm\:align-\[unset\] {
     vertical-align: unset;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1377,10 +1390,6 @@ a:hover {
 
   .md\:ml-\[unset\] {
     margin-left: unset;
-  }
-
-  .md\:mt-10 {
-    margin-top: 2.5rem;
   }
 
   .md\:block {
@@ -1437,16 +1446,16 @@ a:hover {
     padding-bottom: 204px;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .md\:pt-20 {
     padding-top: 5rem;
   }
 
   .md\:pt-\[132px\] {
     padding-top: 132px;
-  }
-
-  .md\:pt-10 {
-    padding-top: 2.5rem;
   }
 
   .md\:text-\[21px\] {
@@ -1765,6 +1774,10 @@ a:hover {
 
   .pizza\:top-\[140px\] {
     top: 140px;
+  }
+
+  .pizza\:block {
+    display: block;
   }
 
   .pizza\:w-\[unset\] {

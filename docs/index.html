@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 <body class="font-Quicksand bg-black dark:bg-grey text-orange dark:text-light_orange relative z-40 ">
-    <header class="md:pt-10 md:mb-18 mb-8 pt-5 fixed bg-black top-0 z-[99999999] w-full transition-all duration-500">
+    <header class="header-info md:pt-10 md:mb-18 mb-8 pt-5 fixed bg-black dark:bg-grey top-0 z-[99999999] w-full transition-all duration-500 header">
         <div class="flex justify-between items-center menu-header pb-5 max-w-[1720px] mx-auto px-5">
             <div>
                 <a href="#">
@@ -28,7 +28,7 @@
             </div>
             <div class="header-on-mobile bg-black dark:bg-grey text-orange dark:text-light_orange font-Quicksand font-bold max-2xl:text-[32px] xl:text-3xl text-xl flex md:flex-row flex-col justify-between lg:gap-9 md:gap-5 gap-15 md:static fixed">
                 <div>
-                    <a href="#" class="block">Home</a>
+                    <a href="#home" class="block">Home</a>
                 </div>
                 <div>
                     <a href="#menu" class="block" id="anchor-menu">Menu</a>
@@ -46,7 +46,7 @@
         </div>
     </header>
     <main>
-        <section class="relative max-w-[1720px] mx-auto lg:mb-[168px] sm:mb-10 mb-23.5 px-5 mt-19">
+        <section class="relative max-w-[1720px] mx-auto lg:mb-[168px] sm:mb-10 mb-23.5 px-5 mt-19" id="home">
             <div class="flex gap-10 justify-between max-w-[1720px] mx-auto costil:flex-row flex-col">
                 <div class="costil:pt-[152px] md:pt-20 pt-8 font-semibold mx-auto">
                     <h2 class="max-2xl:text-9xl xl:text-6xl text-4xl max-w-[580px] text-center costil:text-left">
@@ -56,8 +56,8 @@
                         people disappoint, but pizza never does.
                     </p>
                     <form action="#" class="flex sm:gap-2 gap-6 md:pb-18 pb-7 sm:flex-row flex-col sm:align-[unset] mx-auto items-center">
-                        <label for="#">
-                            <input type="text" class="bg-black dark:bg-grey text-white border-4 border-orange dark:border-light_orange rounded-md py-2 px-2 w-[284px] sm:mx-[unset] mx-auto">
+                        <label for="{empty-input}">
+                            <input type="text" id="empty-input" class="bg-black dark:bg-grey text-white border-4 border-orange dark:border-light_orange rounded-md py-2 px-2 w-[284px] sm:mx-[unset] mx-auto">
                         </label>
                         <button class="border-2 border-orange dark:border-light_orange py-2.5 px-2 text-white bg-orange dark:bg-light_orange flex gap-3 items-center rounded cursor-pointer w-[198px] justify-center">
                             <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,7 +72,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="costil:grid hidden relative items-center select-none">
+                <div class="costil:grid hidden relative items-center select-none wow animate__animated animate__fadeIn">
                     <!-- <div class="strange-bg"></div> -->
                     <img src="./img/header/right.png" alt="#">
                 </div>
@@ -89,51 +89,51 @@
             </div>
         </section>
         <section class="font-Kosugi text-[#FFDDC8] dark:text-brown px-5 costil:pb-20 pb-[330px] costil:mb-[unset] mb-10 relative mx-auto max-w-[1920px] z-30 bg-black dark:bg-white pt-10">
-            <div class="select-none costil:absolute relative costil:mb-0 mb-5 pizza:-left-[50%] xl:-left-[40%] costil:left-0 left-1/2  xl:translate-x-[50%] costil:translate-x-0 -translate-x-[50%] z-50 pizza:top-[140px] xl:top-[300px] top-[unset] xl:bottom-[unset] bottom-0 pizza:w-[unset] xl:w-1/2 costil:w-full w-[300px]">
+            <div class="wow animate__animated animate__fadeIn select-none costil:absolute relative costil:mb-0 mb-5 pizza:-left-[50%] xl:-left-[40%] costil:left-0 left-1/2  xl:translate-x-[50%] costil:translate-x-0 -translate-x-[50%] z-50 pizza:top-[140px] xl:top-[300px] top-[unset] xl:bottom-[unset] bottom-0 pizza:w-[unset] xl:w-1/2 costil:w-full w-[300px]">
                 <img src="./img/102191.png" alt="#" class="pizza:max-w-[100%] xl:max-w-[50%] max-w-full xl:w-[unset] w-[300px]">
             </div>
             <div class="max-w-[1720px] mx-auto px-5">
                     
                     <div class=" font-normal ml-auto pizza:max-w-[77%] xl:max-w-[90%] max-w-full w-full">
-                        <h2 id="menu" class="font-Kaushan lg:text-[152px] text-7xl pb-5 capitalize text-orange dark:text-light_orange text-center select-none">
+                        <h2 id="menu" class="animate__animated wow animate__slideInUp font-Kaushan lg:text-[152px] text-7xl pb-5 capitalize text-orange dark:text-light_orange text-center select-none">
                             menu
                         </h2>
                         <div class="flex gap-5 justify-between costil:flex-row flex-col">
-                            <div class="max-2xl:max-w-[682px] costil:max-w-[500px] max-w-[600px] costil:mx-[unset] mx-auto">
+                            <div class="max-2xl:max-w-[682px] costil:max-w-[500px] max-w-[600px] costil:mx-[unset] mx-auto animate__animated wow animate__slideInLeft">
                                 <div class="pb-12">
                                     <h3 class="lg:text-5xl text-3xl pb-7.5 text-center capitalize">
                                         Pizza by the slice
                                     </h3>
-                                    <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                    <div class="grid grid-cols-country-table-flag  pb-4 sm:gap-10 gap-3 items-end">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
                                     <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
                                     <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
@@ -143,41 +143,41 @@
                                         Pizza by the slice
                                     </h3>
                                     <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
                                     <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
                                     <div class="grid grid-cols-country-table-flag pb-4 sm:gap-10 gap-3 items-end">
-                                        <p class="lg:text-[32px] text-2xl capitalize">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl capitalize">
                                             Pizza style
                                         </p>
                                         <div class="for-dots shrink-0 grow basis-auto overflow-hidden">
                                             <span>................................................................................................................................</span>
                                         </div>
-                                        <p class="lg:text-[32px] text-2xl whitespace-nowrap">
+                                        <p class="lg:text-[32px] sm:text-2xl text-xl whitespace-nowrap">
                                             $4.2
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="max-w-[600px] costil:mx-[unset] mx-auto">
+                            <div class="max-w-[600px] costil:mx-[unset] mx-auto animate__animated wow animate__slideInRight">
                                 <h3 class="lg:text-5xl text-3xl md:pb-16 pb-8 text-center capitalize">
                                     Gourmet Pizza
                                 </h3>
@@ -234,7 +234,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center">
-                                    <button class="py-4 px-2 text-[#FFDDC8] bg-orange dark:bg-light_orange rounded cursor-pointer w-[247px] text-2xl capitalize">
+                                    <button class="py-4 px-2 text-[#FFDDC8] bg-orange dark:bg-light_orange rounded cursor-pointer w-[247px] text-2xl capitalize animate__animated wow animate__fadeIn">
                                         Explore more
                                     </button>
                                 </div>
@@ -245,38 +245,38 @@
         </section>
         <section class="font-Quicksand relative z-0 max-w-[1920px] mx-auto">
             
-            <div class="grid lg:gap-20 gap-8 lg:grid-cols-2 grid-cols-1 lg:px-0 px-5">
-                <div class="md:pt-[132px] max-2xl:text-[64px] lg:text-5xl text-3xl pt-10">
+            <div class="grid lg:gap-20 gap-8 lg:grid-cols-2 grid-cols-1 lg:px-0 px-5 " id="coupon">
+                <div class="md:pt-[132px] max-2xl:text-[64px] lg:text-5xl text-3xl pt-10 animate__animated wow animate__fadeInLeft">
                     <div class="max-w-[880px] lg:mx-[unset] mx-auto">
-                        <h2 id="coupon" class="lg:ml-[148px] ml-auto mr-auto lg-mr-[unset] capitalize lg:text-left text-center font-semibold max-w-[730px] text-white dark:text-brown pb-4">
+                        <h2 class="lg:ml-[148px] ml-auto mr-auto lg-mr-[unset] capitalize lg:text-left text-center font-semibold max-w-[730px] text-white dark:text-brown pb-4">
                             <span class="text-orange dark:text-light_orange">
                                 pizza
                             </span>
                             <span>of the month</span>
-                            <p class="max-w-[570px] mx-auto">
+                            <span class="max-w-[570px] mx-auto block">
                                 <span>The big</span>
                                 <span class="text-orange dark:text-light_orange max-2xl:text-8xl lg:text-6xl text-5xl uppercase">
                                 bird
                             </span>
-                            </p>
+                        </span>
                         </h2>
                         <div class="">
-                            <img src="./img/third-block/hands-taking-pizza 1.png" alt="#">
+                            <img src="./img/third-block/hands-taking-pizza1.png" alt="#">
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col self-center relative">
                     <div class="text-pink dark:text-brown max-2xl:text-4xl text-2xl max-w-[540px] self-start ul-list mx-auto lg:mb-30 mb-10 max-2xl:pt-0 lg:pt-20 pt-0">
-                        <div class="rotate-line absolute bottom-[50%] -right-[165px] w-[1890px] z-10 h-0 bg-orange dark:bg-light_orange">
+                        <div class="pizza:block hidden rotate-line absolute bottom-[50%] -right-[165px] w-[1890px] z-10 h-0 bg-orange dark:bg-light_orange">
         
                         </div>
                         <ul class="ul-text xl:block grid self-center">
-                            <li class="lg:mb-10 mb-3 ml-0 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Meat Pizza</li>
-                            <li class="lg:mb-10 mb-3 2xl:-ml-11 lg:-ml-6.5 ml-0 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Margarita Pizza</li>
-                            <li class="lg:mb-10 mb-3 2xl:-ml-[88px] lg:-ml-13 ml-0 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Hawaiian Pizza</li>
-                            <li class="lg:mb-10 mb-3 2xl:-ml-[132px] ml-0 lg:-ml-19.5 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Pepperoni Pizza</li>
-                            <li class="lg:mb-10 mb-3 2xl:-ml-[176px] ml-0 lg:-ml-[104px] pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Veggie Pizza</li>
-                            <li class="2xl:-ml-[220px] lg:-ml-[130px] ml-0 pl-[1.875rem] mb-3 before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative">Cheese Pizza</li>
+                            <li class="lg:mb-10 mb-3 ml-0 pl-7.5 before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__slow">Meat Pizza</li>
+                            <li class="lg:mb-10 mb-3 2xl:-ml-11 lg:-ml-6.5 ml-0 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__slow">Margarita Pizza</li>
+                            <li class="lg:mb-10 mb-3 2xl:-ml-[88px] lg:-ml-13 ml-0 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__delay-1s animate__slow	">Hawaiian Pizza</li>
+                            <li class="lg:mb-10 mb-3 2xl:-ml-[132px] ml-0 lg:-ml-19.5 pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__delay-1s animate__slow	">Pepperoni Pizza</li>
+                            <li class="lg:mb-10 mb-3 2xl:-ml-[176px] ml-0 lg:-ml-[104px] pl-[1.875rem] before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__delay-2s">Veggie Pizza</li>
+                            <li class="2xl:-ml-[220px] lg:-ml-[130px] ml-0 pl-[1.875rem] mb-3 before:absolute before:left-0 before:w-2 before:h-2 before:rounded-full before:bg-white dark:before:bg-brown before:top-1/2 before:-translate-y-1/2 relative animate__animated wow animate__fadeInRight animate__delay-2s ">Cheese Pizza</li>
                         </ul>
                     </div>
                     <div class="flex justify-center xl:gap-28 sm:gap-14 gap-5 max-w-[515px] text-lg mx-auto sm:flex-row flex-col">
@@ -306,10 +306,10 @@
                         Between 9:30 am - 10:00 pm
                     </p>
                     <div class="max-w-[424px] mx-auto relative grid grid-cols-1 whitespace-nowrap font-semibold">
-                        <label for="#" class=" pb-9 text-[21px] w-full flex">Name <input type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
-                        <label for="#" class="flex w-full pb-9 text-[21px] ">E-Mail <input type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
-                        <label for="#" class="flex w-full pb-9 text-[21px]  ">People number <input type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
-                        <label for="#" class="flex w-full pb-19 text-[21px]  ">Date & time <input type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
+                        <label for="{Name}" class=" pb-9 text-[21px] w-full flex">Name <input id="Name" type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
+                        <label for="{email}" class="flex w-full pb-9 text-[21px] ">E-Mail <input id="email" type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
+                        <label for="{number}" class="flex w-full pb-9 text-[21px]  ">People number <input id="number" type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
+                        <label for="{Date}" class="flex w-full pb-19 text-[21px]  ">Date & time <input id="Date" type="text" class="ml-5 form-input w-full block border-white dark:border-[#151515]"></label>
                     </div>
                     <div class="max-w-[156px] mx-auto">
                         <button class="py-2 px-2 text-[#FFDDC8] bg-orange dark:bg-light_orange rounded cursor-pointer w-[155px] capitalize flex justify-center">
@@ -333,6 +333,7 @@
         </section>
     </main>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="./js/app.min.js"></script>
 </body>
 </html>
