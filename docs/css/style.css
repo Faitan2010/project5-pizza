@@ -726,9 +726,6 @@ video {
 .grid-cols-country-table-flag {
   grid-template-columns: auto minmax(30px, auto) min-content;;
 }
-.grid-cols-country-table-text {
-  grid-template-columns: 50% minmax(0, 1fr);
-}
 .flex-col {
   flex-direction: column;
 }
@@ -1106,6 +1103,7 @@ button:hover {
     top: 100%;
     left: 0;
     justify-content: center;
+    align-items: center;
     display: flex;
     transform: translateX(-120vw);
     text-align: center;
@@ -1335,10 +1333,6 @@ a:hover {
     margin-bottom: 2.5rem;
   }
 
-  .sm\:grid-cols-country-table-flag {
-    grid-template-columns: auto minmax(30px, auto) min-content;;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1357,10 +1351,6 @@ a:hover {
 
   .sm\:gap-2 {
     gap: 0.5rem;
-  }
-
-  .sm\:whitespace-normal {
-    white-space: normal;
   }
 
   .sm\:px-5 {

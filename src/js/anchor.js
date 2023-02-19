@@ -8,7 +8,6 @@ export const Anchors = function () {
 
 Anchors.prototype.handleClick = function (e) {
     e.preventDefault();
-
     this.target = e.target;
     this.anchor = this.target.getAttribute('href').replace('#', '');
 
@@ -21,9 +20,10 @@ Anchors.prototype.handleClick = function (e) {
     if (!this.section) {
         return
     }
-
     this.sectionTop = this.section.getBoundingClientRect().top;
     this.offset = this.sectionTop + window.scrollY - this.headerHeight;
+
+    
 
     window.scrollTo({
         top: this.offset,
