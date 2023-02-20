@@ -848,6 +848,9 @@ video {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
+.pb-20 {
+  padding-bottom: 5rem;
+}
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -871,9 +874,6 @@ video {
 }
 .pb-9\.5 {
   padding-bottom: 2.375rem;
-}
-.pb-\[330px\] {
-  padding-bottom: 330px;
 }
 .pl-7 {
   padding-left: 1.75rem;
@@ -1030,8 +1030,8 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.duration-500 {
-  transition-duration: 500ms;
+.duration-100 {
+  transition-duration: 100ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1096,23 +1096,27 @@ button:hover {
     transition: all ease-in-out 0.3s;
     position: absolute;
     flex-direction: column;
-    gap: 73px;
+    gap: 7vh;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     z-index: 98876;
     top: 100%;
     left: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     display: flex;
     transform: translateX(-120vw);
     text-align: center;
+    padding-top: 15vh;
   }
   .header-on-mobile.active {
-    height: 100vh;
+    height: calc(100vh - 100px);
   }
   .menu-header.active .header-on-mobile {
     transform: translateX(0);
+  }
+  .header-info.header-animate .header-on-mobile {
+    height: calc(100vh - 70px);
   }
 }
 a:hover {
@@ -1611,10 +1615,6 @@ a:hover {
 
   .costil\:flex-row {
     flex-direction: row;
-  }
-
-  .costil\:pb-20 {
-    padding-bottom: 5rem;
   }
 
   .costil\:pt-\[152px\] {

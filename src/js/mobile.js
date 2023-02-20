@@ -4,6 +4,7 @@ export const MobileMenu = function () {
     this.headerOnMobile = document.querySelector('.header-on-mobile');
     this.menu = document.querySelector('.menu-icon');
     this.header = document.querySelector('.menu-header');
+    this.prevScrollValue = window.scrollY;
 
 
 
@@ -12,8 +13,7 @@ export const MobileMenu = function () {
 }
 
     MobileMenu.prototype.animateHeaderHandler = function() {
-        let prevScrollValue = window.scrollY;
-        if (prevScrollValue < window.scrollY) {
+        if (this.prevScrollValue < window.scrollY) {
 
             if (!this.headerMenu.classList.contains('header-animate')) {
                 this.headerMenu.classList.add('header-animate');
@@ -29,7 +29,7 @@ export const MobileMenu = function () {
             }
         }
     
-        prevScrollValue = window.scrollY;
+        this.prevScrollValue = window.scrollY;
     }
 
 
@@ -40,11 +40,12 @@ export const MobileMenu = function () {
     }
 
     MobileMenu.prototype.changeBurger = function() {
+        this.menu.addEventListener('click', this.headerHandler.bind(this))
+    }
 
-        this.menu.addEventListener('click', (e) => {
-            this.header.classList.toggle('active');
-            document.body.classList.toggle('overflow-hidden')
-        })
+    MobileMenu.prototype.headerHandler = function() {
+        this.header.classList.toggle('active');
+        document.body.classList.toggle('overflow-hidden')
     }
 
   
