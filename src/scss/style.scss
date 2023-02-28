@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import "fonts";
+@import "./libs/_animate.scss";
 
 .rotate-line {
     border: 21px solid #FF8C42;
