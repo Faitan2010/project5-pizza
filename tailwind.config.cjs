@@ -58,7 +58,7 @@ module.exports = {
                     'sans-serif',
                 ],
                 Kaushan: [
-                    'Kaushan Script',
+                    'KaushanScript',
                     'Roboto',
                     'Helvetica',
                     'Arial',
